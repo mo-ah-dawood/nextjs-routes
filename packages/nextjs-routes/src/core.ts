@@ -118,6 +118,12 @@ declare module "nextjs-routes" {
             .join("\n    | ")}`
     };
 
+    
+  export function getAvailbleRoutes(){
+    return ["${routes.map((route)=>route.pathname).join("\",\"")}"];
+  }
+
+  
   interface StaticRoute<Pathname> {
     pathname: Pathname;
     query?: Query | undefined;
