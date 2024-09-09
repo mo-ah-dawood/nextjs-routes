@@ -119,7 +119,7 @@ declare module "nextjs-routes" {
     };
 
     
-  export function getAvailbleRoutes(){
+  export function getAvailableRoutes(){
     return ["${routes.map((route)=>route.pathname).join("\",\"")}"];
   }
 
